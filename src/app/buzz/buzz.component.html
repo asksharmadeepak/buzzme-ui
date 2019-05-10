@@ -1,3 +1,39 @@
-<p>
-  buzz works!
-</p>
+<section id="content_form"> 
+  <h1>Fill details to Get Notified</h1>
+  
+  <form class="userDetailForm Form">
+      <div class="Form_element">
+          <label for="start">Select Your Holiday: </label>
+          <input type="date" id="start" name="trip-start" value="2019-05-10" 
+          min="2019-05-10" max="2019-12-31" required>    
+      </div>  
+
+      <div class="Form_element">
+          <label for="frequency">Frequency: </label>
+          <select name="notificationFequency" id="frequency" required>
+                  <option value="2">Twice a Day</option>
+                  <option value="3">Thrice a Day</option>
+                  <option value="4">Four times a Day</option>
+          </select>     
+      </div>   
+
+      <div class="Form_element">
+          <label for="mode" class="inp">
+              <input type="text" id="mode" value="Whatsapp" disabled>
+              <span class="label">Mode: </span>
+              <span class="border"></span>
+          </label>
+      </div>
+      
+      <div class="Form_element">
+          <label for="phone" class="inp">
+              <input type="tel" id="phone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="&nbsp;" required>
+              <span class="label">Mobile No:</span>
+              <span class="border"></span>
+          </label>
+      </div>
+
+      <input class="Submit_button" type="button" value="Create Notification" style="">
+  </form>
+
+</section>
